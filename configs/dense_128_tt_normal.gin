@@ -1,0 +1,20 @@
+# A 'default' setting with a loss function not weighted by cosmic variance.
+output_dim = 2550
+
+LoadDataset.label = 'prakrut'
+LoadDataset.ntrain = 85_000
+LoadDataset.output_dim = %output_dim
+LoadDataset.scaling = 'linear'
+LoadDataset.data_dir = "/home/pc/codes/ML/camb_data/normal/"
+
+
+BuildDenseNetwork.input_dim = 6 
+BuildDenseNetwork.output_dim = %output_dim
+BuildDenseNetwork.units = [128, 256, 512]
+BuildDenseNetwork.dropout_rate = 0.1
+
+cv_loss.output_dim = %output_dim
+
+
+Train.epochs = 20
+Train.batch_size = 100

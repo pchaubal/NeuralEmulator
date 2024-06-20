@@ -1,0 +1,8 @@
+CalculatePowerspectra.As=[2.0e-9, 2.2e-9] 
+CalculatePowerspectra.ns=[.90,.99]
+CalculatePowerspectra.taus=[0.04,.08]
+CalculatePowerspectra.omega_bs=[0.021, 0.023]
+CalculatePowerspectra.omega_cs=[0.11,0.13] 
+CalculatePowerspectra.H0s=[50,95]
+CalculatePowerspectra.n_total=32
+CalculatePowerspectra.lmax=2500

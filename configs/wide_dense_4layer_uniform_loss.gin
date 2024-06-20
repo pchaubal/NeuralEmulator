@@ -1,0 +1,16 @@
+# A 'default' setting with a loss function not weighted by cosmic variance.
+
+LoadDataset.label = 'prakrut'
+LoadDataset.ntrain = 75_000
+LoadDataset.output_dim = 2500
+LoadDataset.scaling = 'linear'
+
+
+BuildDenseNetwork.input_dim = 6 
+BuildDenseNetwork.output_dim = 2500
+BuildDenseNetwork.units = [256, 512, 1024, 2048]
+BuildDenseNetwork.dropout_rate = 0.1
+
+
+Train.epochs = 100
+Train.batch_size = 100

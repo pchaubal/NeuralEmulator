@@ -1,0 +1,11 @@
+src/models
+src/__pycache__
+results/
+dense_128_tt/
+*/__pycache__
+
+# ignore slurm outputs
+logs/
+
+# vscode settings
+.vscode
